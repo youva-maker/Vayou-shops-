@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vayou | Boutique Numérique</title>
+    <style>
+        :root {
+            --primary: #6c5ce7;
+            --bg: #0f0c29;
+            --text: #ffffff;
+            --card-bg: #1e1b4b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 2rem;
+            text-align: center;
+            background: linear-gradient(to bottom, #1e1b4b, var(--bg));
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero {
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: var(--primary);
+        }
+
+        /* Grille des produits */
+        .grid-produits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 0 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            border: 1px solid #2d2a5d;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 200px;
+            background: #2d2a5d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .prix {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #00d2d3;
+        }
+
+        .btn-achat {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">VAYOU</div>
+        <p>Tes ressources numériques exclusives</p>
+    </header>
+
+    <section class="hero">
+        <h1>Téléchargement Instantané. Qualité Premium.</h1>
+        <p>Boostez vos projets avec nos actifs numériques sélectionnés.</p>
+    </section>
+
+    <h2 class="section-title">Produits Phares</h2>
+
+    <div class="grid-produits">
+        <div class="card">
+            <div class="card-img">📘</div>
+            <div class="card-body">
+                <h3>E-book Masterclass</h3>
+                <p>Apprenez le design en 30 jours.</p>
+                <div class="prix">14.99 €</div>
+                <a href="#" class="btn-achat">Acheter maintenant</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img">🎨</div>
+            <div class="card-body">
+                <h3>Pack de Presets</h3>
+                <p>10 filtres pro pour vos photos.</p>
+                <div class="prix">9.00 €</div>
+                <a href="#" class="btn-achat">Acheter maintenant</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img">🎵</div>
+            <div class="card-body">
+                <h3>Pack de Samples</h3>
+                <p>Des beats lo-fi libres de droits.</p>
+                <div class="prix">19.50 €</div>
+                <a href="#" class="btn-achat">Acheter maintenant</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 VAYOU - Tous droits réservés.
+    </footer>
+
+</body>
+</html>
